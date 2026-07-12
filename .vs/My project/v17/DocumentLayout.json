@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Unity\\Unity Hub\\projects\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\unity\\unity hub\\projects\\my project\\assets\\script\\tips.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\tips.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\unity\\unity hub\\projects\\my project\\assets\\script\\tipspanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\tipspanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Unity\\Unity Hub\\projects\\My project\\assets\\script\\logo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\logo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Unity\\Unity Hub\\projects\\My project\\assets\\script\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Unity\\Unity Hub\\projects\\My project\\assets\\script\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tips.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\Tips.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\Tips.cs",
+              "ToolTip": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\Tips.cs",
+              "RelativeToolTip": "Assets\\script\\Tips.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T02:51:26.185Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "logo.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\logo.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\logo.cs",
+              "ToolTip": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\logo.cs",
+              "RelativeToolTip": "Assets\\script\\logo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T06:06:33.446Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TipsPanel.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\TipsPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\TipsPanel.cs",
+              "ToolTip": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\TipsPanel.cs",
+              "RelativeToolTip": "Assets\\script\\TipsPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T07:11:43.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\login.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\login.cs",
+              "ToolTip": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\login.cs",
+              "RelativeToolTip": "Assets\\script\\login.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwDsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T10:52:06.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "register.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\register.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\register.cs",
+              "ToolTip": "D:\\Unity\\Unity Hub\\projects\\My project\\Assets\\script\\register.cs",
+              "RelativeToolTip": "Assets\\script\\register.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwDQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T03:01:57.582Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
