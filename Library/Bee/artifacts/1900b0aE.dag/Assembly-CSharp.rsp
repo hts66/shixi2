@@ -349,6 +349,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/script/login.cs"
 "Assets/script/logo.cs"
+"Assets/script/LogoAudioPlayer.cs"
 "Assets/script/register.cs"
 "Assets/script/Tips.cs"
 "Assets/script/TipsPanel.cs"
