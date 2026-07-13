@@ -71,8 +71,11 @@ public class MenuUserDataSync : MonoBehaviour
         PlayerPrefs.SetString($"{currentLoginAccount}_avatarPath", newAvatarPath);
         PlayerPrefs.Save();
 
-        // 提示更换成功
-        TipsPanel.Instance.CreateTips("头像更换成功！");
+        // 判空保护，防止TipsPanel销毁后访问报错
+        if (TipsPanel.Instance != null)
+        {
+            TipsPanel.Instance.CreateTips("头像更换成功！");
+        }
     }
 
     /// <summary>根据路径刷新头像显示</summary>
