@@ -1186,6 +1186,7 @@ MonoBehaviour:
   accountTxt: {fileID: 1336619752}
   goldTxt: {fileID: 1679852216}
   lvTxt: {fileID: 2110516648}
+  headImage: {fileID: 532884292}
 --- !u!1 &1679852214
 GameObject:
   m_ObjectHideFlags: 0

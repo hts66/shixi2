@@ -66,10 +66,15 @@ public class login : MonoBehaviour
             return;
         }
 
-        //登录成功，保存当前登录账号、金币初始0、等级初始0到本地
+        //登录成功，保存账号、金币、等级
         PlayerPrefs.SetString("currentAccount", accountStr);
         PlayerPrefs.SetInt("gold", 0);
         PlayerPrefs.SetInt("level", 0);
+
+        //读取当前账号注册时绑定的随机头像路径
+        string avatarPath = PlayerPrefs.GetString(accountStr + "_avatarPath", "Avatar/UI_EmotionIcon1");
+        PlayerPrefs.SetString("currentAvatarPath", avatarPath);
+
         PlayerPrefs.Save(); //立即写入本地，防止丢失
 
         //登录成功提示
