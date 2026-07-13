@@ -60,16 +60,21 @@ public class login : MonoBehaviour
         }
 
         string rcdPwd = PlayerPrefs.GetString("pwdKey", "");
-        // 修复原代码BUG：之前错误和accountStr对比，现在改为和passwordStr对比
         if (!rcdPwd.Equals(passwordStr))
         {
             TipsPanel.Instance.CreateTips("密码错误，请确认密码");
             return;
         }
 
+        //登录成功，保存当前登录账号、金币初始0、等级初始0到本地
+        PlayerPrefs.SetString("currentAccount", accountStr);
+        PlayerPrefs.SetInt("gold", 0);
+        PlayerPrefs.SetInt("level", 0);
+        PlayerPrefs.Save(); //立即写入本地，防止丢失
+
         //登录成功提示
         TipsPanel.Instance.CreateTips("登录成功，正在进入游戏...");
-        // 修改跳转场景：从 MenuScene 改为 logoScene 加载界面
+        //跳转logo加载界面
         SceneManager.LoadScene("logoScene");
     }
 }

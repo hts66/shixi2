@@ -350,6 +350,7 @@
 "Assets/script/login.cs"
 "Assets/script/logo.cs"
 "Assets/script/LogoAudioPlayer.cs"
+"Assets/script/MenuUserDataSync.cs"
 "Assets/script/register.cs"
 "Assets/script/Tips.cs"
 "Assets/script/TipsPanel.cs"
