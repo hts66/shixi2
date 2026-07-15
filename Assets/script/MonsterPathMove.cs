@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 public class MonsterPathMove : MonoBehaviour
 {
-    [Header("路径Cube节点，按【起点→拐弯→终点】顺序拖拽")]
-    public List<Transform> pathPoints;
     [Header("怪物移动速度")]
     public float moveSpeed = 2.5f;
     [Header("到达节点判定距离（越大转弯越提前）")]
     public float reachPointDistance = 0.3f;
 
+    // 自动获取，不需要在面板赋值，删掉public暴露
+    private List<Transform> pathPoints;
     private int currentTargetIndex;
     private Transform currentTargetPoint;
     private float fixedYHeight;
@@ -19,10 +19,25 @@ public class MonsterPathMove : MonoBehaviour
         // 锁定怪物初始Y高度，全程不会上下浮动
         fixedYHeight = transform.position.y;
 
-        // 没有路径直接停止运行
-        if (pathPoints == null || pathPoints.Count == 0)
+        // 自动找到场景里的PathRoot，读取所有子Cube作为路径点
+        GameObject pathRootObj = GameObject.Find("PathRoot");
+        if (pathRootObj == null)
         {
-            Debug.LogWarning("怪物没有配置路径节点！");
+            Debug.LogError("场景找不到PathRoot物体，请检查层级！");
+            enabled = false;
+            return;
+        }
+
+        pathPoints = new List<Transform>();
+        foreach (Transform child in pathRootObj.transform)
+        {
+            pathPoints.Add(child);
+        }
+
+        // 没有路径直接停止运行
+        if (pathPoints.Count == 0)
+        {
+            Debug.LogWarning("PathRoot下没有任何路径Cube子物体！");
             enabled = false;
             return;
         }
@@ -80,18 +95,27 @@ public class MonsterPathMove : MonoBehaviour
     // Scene窗口绘制绿色路径辅助线，方便查看路线
     void OnDrawGizmos()
     {
-        if (pathPoints == null || pathPoints.Count < 2) return;
-        Gizmos.color = Color.green;
-        for (int i = 0; i < pathPoints.Count - 1; i++)
+        GameObject pathRootObj = GameObject.Find("PathRoot");
+        if (pathRootObj == null) return;
+
+        List<Transform> tempPath = new List<Transform>();
+        foreach (Transform child in pathRootObj.transform)
         {
-            Transform a = pathPoints[i];
-            Transform b = pathPoints[i + 1];
+            tempPath.Add(child);
+        }
+
+        if (tempPath.Count < 2) return;
+        Gizmos.color = Color.green;
+        for (int i = 0; i < tempPath.Count - 1; i++)
+        {
+            Transform a = tempPath[i];
+            Transform b = tempPath[i + 1];
             if (a != null && b != null)
             {
                 Gizmos.DrawLine(a.position, b.position);
                 Gizmos.DrawSphere(a.position, 0.25f);
             }
         }
-        Gizmos.DrawSphere(pathPoints[pathPoints.Count - 1].position, 0.25f);
+        Gizmos.DrawSphere(tempPath[tempPath.Count - 1].position, 0.25f);
     }
 }

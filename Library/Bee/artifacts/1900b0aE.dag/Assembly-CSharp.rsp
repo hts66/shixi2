@@ -350,6 +350,7 @@
 "Assets/script/AudioManage.cs"
 "Assets/script/AudioSettingPanel.cs"
 "Assets/script/AutoBindButtonSFX.cs"
+"Assets/script/EnemyManager.cs"
 "Assets/script/GearBtnCtrl.cs"
 "Assets/script/login.cs"
 "Assets/script/logo.cs"
