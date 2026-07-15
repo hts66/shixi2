@@ -14,11 +14,11 @@ public class EnemyManager : MonoBehaviour
 
     [Header("刷新时间参数")]
     // 初始生成间隔（秒）
-    public float baseSpawnInterval = 3f;
+    public float baseSpawnInterval = 5f;
     // 每生成一只怪物，间隔减少多少
     public float intervalReduceStep = 0.15f;
     // 最小刷新间隔，防止无限变快
-    public float minSpawnInterval = 0.8f;
+    public float minSpawnInterval = 3f;
 
     // 当前实际刷新间隔
     private float currentSpawnInterval;

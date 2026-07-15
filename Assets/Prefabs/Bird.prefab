@@ -197,20 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b101ed5a1d24649acb74e1d46b48f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  moveSpeed: 2.5
+  moveSpeed: 5
   reachPointDistance: 0.3
 --- !u!1 &8169564981410566058
 GameObject:
